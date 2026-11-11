@@ -1,5 +1,10 @@
 # Chaos harness
 
+## Create .env from .env.example in the project dir
+```sh
+cp .env.example .env
+  
+```
 ## Setup an API, DB and workers
 ```sh
 docker compose -f docker-compose.yml -f chaos/docker-compose.chaos.yml up -d --build --scale worker=8
