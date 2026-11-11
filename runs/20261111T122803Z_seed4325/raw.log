@@ -1,0 +1,69 @@
+seed=4325
+ Container soup-internship-worker-8 Stopping 
+ Container soup-internship-worker-6 Stopping 
+ Container soup-internship-worker-3 Stopping 
+ Container soup-internship-worker-2 Stopping 
+ Container soup-internship-worker-5 Stopping 
+ Container soup-internship-worker-7 Stopping 
+ Container soup-internship-worker-4 Stopping 
+ Container soup-internship-worker-1 Stopping 
+ Container soup-internship-worker-7 Stopped 
+ Container soup-internship-worker-3 Stopped 
+ Container soup-internship-worker-2 Stopped 
+ Container soup-internship-worker-5 Stopped 
+ Container soup-internship-worker-8 Stopped 
+ Container soup-internship-worker-6 Stopped 
+ Container soup-internship-worker-4 Stopped 
+ Container soup-internship-worker-1 Stopped 
+ Container db Running 
+ Container soup-internship-api-1 Running 
+ Container db Waiting 
+ Container db Healthy 
+ Container soup-internship-worker-1 Starting 
+ Container soup-internship-worker-1 Started 
+ Container soup-internship-worker-2 Starting 
+ Container soup-internship-worker-2 Started 
+ Container soup-internship-worker-3 Starting 
+ Container soup-internship-worker-3 Started 
+ Container soup-internship-worker-4 Starting 
+ Container soup-internship-worker-4 Started 
+ Container soup-internship-worker-5 Starting 
+ Container soup-internship-worker-5 Started 
+ Container soup-internship-worker-6 Starting 
+ Container soup-internship-worker-6 Started 
+ Container soup-internship-worker-7 Starting 
+ Container soup-internship-worker-7 Started 
+ Container soup-internship-worker-8 Starting 
+ Container soup-internship-worker-8 Started 
+KILL c0604a5c201a78ebaedb5b8304d985f7a0a7c17bec97cc650cb47b6f9ed606e1
+KILL a3cf4f54e2682fdc81ec6ac08547717ae9f1d19c32f1f791e2db7280e7446f9d
+KILL 57831f7757005750cd39b754e126491b93a815fce2359e5abb8d6cf4718475c6
+Traceback (most recent call last):
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/soup-internship/chaos/harness.py", line 313, in main
+    await settle(conn, args.settle_timeout)
+  File "/home/horny_divorce/soup-internship/chaos/harness.py", line 208, in settle
+    await asyncio.sleep(1)
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/horny_divorce/soup-internship/chaos/harness.py", line 365, in run
+    status, result = asyncio.run(main(args))
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+RESULT INVALID /home/horny_divorce/soup-internship/runs/20261111T122803Z_seed4325

@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "jobs": 300,
+    "seed": 4325,
+    "kill_max_seconds": 900,
+    "settle_timeout": 240,
+    "check_only": false,
+    "freeze": false
+  },
+  "seed": 4325,
+  "status": "INVALID",
+  "invariants": {},
+  "kills": []
+}

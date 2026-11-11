@@ -1,0 +1,72 @@
+seed=4325
+ Container soup-internship-worker-7 Stopping 
+ Container soup-internship-worker-3 Stopping 
+ Container soup-internship-worker-1 Stopping 
+ Container soup-internship-worker-8 Stopping 
+ Container soup-internship-worker-2 Stopping 
+ Container soup-internship-worker-5 Stopping 
+ Container soup-internship-worker-4 Stopping 
+ Container soup-internship-worker-6 Stopping 
+ Container soup-internship-worker-6 Stopped 
+ Container soup-internship-worker-3 Stopped 
+ Container soup-internship-worker-5 Stopped 
+ Container soup-internship-worker-7 Stopped 
+ Container soup-internship-worker-4 Stopped 
+ Container soup-internship-worker-1 Stopped 
+ Container soup-internship-worker-2 Stopped 
+ Container soup-internship-worker-8 Stopped 
+ Container db Running 
+ Container soup-internship-api-1 Running 
+ Container db Waiting 
+ Container db Healthy 
+ Container soup-internship-worker-1 Starting 
+ Container soup-internship-worker-1 Started 
+ Container soup-internship-worker-2 Starting 
+ Container soup-internship-worker-2 Started 
+ Container soup-internship-worker-3 Starting 
+ Container soup-internship-worker-3 Started 
+ Container soup-internship-worker-4 Starting 
+ Container soup-internship-worker-4 Started 
+ Container soup-internship-worker-5 Starting 
+ Container soup-internship-worker-5 Started 
+ Container soup-internship-worker-6 Starting 
+ Container soup-internship-worker-6 Started 
+ Container soup-internship-worker-7 Starting 
+ Container soup-internship-worker-7 Started 
+ Container soup-internship-worker-8 Starting 
+ Container soup-internship-worker-8 Started 
+KILL 1128401510d040fe126ceb8734bb950e2697f40e43d15de9491eda3b82ce504d
+KILL 1128401510d040fe126ceb8734bb950e2697f40e43d15de9491eda3b82ce504d
+KILL d33e7b506e6d040ecb637af2aca5e884e9cc05fe5154753645508e9597296f6d
+KILL 57831f7757005750cd39b754e126491b93a815fce2359e5abb8d6cf4718475c6
+KILL 5d4b6f55768625561583cb4376f0b90f1882faedd15cf48760a9557a3077858b
+KILL ff21372861ff9cbd24c92a8f3ea4b468ba6a9e6334a5ba2bf4e549c9130cf827
+Traceback (most recent call last):
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/soup-internship/chaos/harness.py", line 313, in main
+    await settle(conn, args.settle_timeout)
+  File "/home/horny_divorce/soup-internship/chaos/harness.py", line 208, in settle
+    await asyncio.sleep(1)
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/horny_divorce/soup-internship/chaos/harness.py", line 365, in run
+    status, result = asyncio.run(main(args))
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/horny_divorce/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+RESULT INVALID /home/horny_divorce/soup-internship/runs/20261111T122712Z_seed4325

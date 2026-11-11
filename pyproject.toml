@@ -1,0 +1,28 @@
+[project]
+name = "soup-internship"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "0m1rum9", email = "almseylkhan@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.32.0",
+    "pydantic-settings>=2.16.2",
+]
+[project.optional-dependencies]
+api = [
+    "fastapi[standard]>=0.162.2",
+]
+worker = [
+    
+]
+
+[project.scripts]
+soup-internship = "soup_internship:main"
+worker = "worker:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"

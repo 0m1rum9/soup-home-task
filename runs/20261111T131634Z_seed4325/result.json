@@ -1,0 +1,323 @@
+{
+  "parameters": {
+    "jobs": 10000,
+    "seed": 4325,
+    "kill_max_seconds": 900,
+    "settle_timeout": 650,
+    "check_only": false,
+    "freeze": false
+  },
+  "seed": 4325,
+  "status": "PASS",
+  "invariants": {
+    "I1": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I2": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I3": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I4": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I5": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    }
+  },
+  "kills": [
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "63205ec936a0f6446034e261ac1a4f2cda3c8b05adfd87e0d010dacadb9647b4",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "63205ec936a0f6446034e261ac1a4f2cda3c8b05adfd87e0d010dacadb9647b4",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "63205ec936a0f6446034e261ac1a4f2cda3c8b05adfd87e0d010dacadb9647b4",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "4adafcf7064bade438684d6af8ac3ae7592ac3f055e688aca6dabd9b28f2ae0f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "b66c8a3e76bfaaa5ff7b5fc84b097b8e3c381a3c7faf311571e3b02c42d5faff",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "63205ec936a0f6446034e261ac1a4f2cda3c8b05adfd87e0d010dacadb9647b4",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "63205ec936a0f6446034e261ac1a4f2cda3c8b05adfd87e0d010dacadb9647b4",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "63205ec936a0f6446034e261ac1a4f2cda3c8b05adfd87e0d010dacadb9647b4",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "c4ff1a451a023b465bad83d26d9ccce486d6075a5770f19157a3eaafe4dac13c",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "2f2d7f2750e345c3f4ee3189d6b93e65b71862f69691ea533c9ee1ee35389033",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "dddac64a243d2eec2544907b74ac948a83e79da0effe4e481da01d37dc964fdc",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0ccd59cf8a7809a943736f4847d83827a580140152e34592d87906804c896410",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "cebda52cdc1edf29606b5754d0510d5cd9c9c2d36052d52c31acc62aaece590b",
+      "action": "SIGKILL"
+    }
+  ],
+  "metrics": {
+    "failed": 0,
+    "attempts_ge_1": 3,
+    "worker_restarts": 0,
+    "worker_log_errors": 0
+  }
+}

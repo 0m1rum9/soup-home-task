@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "jobs": 300,
+    "seed": 4325,
+    "kill_max_seconds": 900,
+    "settle_timeout": 240,
+    "check_only": false,
+    "freeze": false
+  },
+  "seed": 4325,
+  "status": "PASS",
+  "invariants": {
+    "I1": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I2": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I3": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I4": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    },
+    "I5": {
+      "status": "PASS",
+      "violations": 0,
+      "examples": []
+    }
+  },
+  "kills": [
+    {
+      "container": "0554be7716b2d082a55d7a788ac7173c526e4aa629f1b527eb93f4c801d9c071",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "ec8ec10bb5bf3a45a5b08aa152853aa5325b91872b9662c1390b77f728b36d4f",
+      "action": "SIGKILL"
+    },
+    {
+      "container": "0554be7716b2d082a55d7a788ac7173c526e4aa629f1b527eb93f4c801d9c071",
+      "action": "SIGKILL"
+    }
+  ],
+  "metrics": {
+    "failed": 0,
+    "attempts_ge_1": 1,
+    "worker_restarts": 0,
+    "worker_log_errors": 0
+  }
+}

@@ -1,0 +1,57 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api.Dockerfile
+    
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD:-soup}
+      - DB_USER=${DB_USER:-soup}
+      - DB_NAME=${DB_NAME:-soup}
+      - DB_HOST=${DB_HOST:-api_db}
+      - DB_PORT=${DB_PORT:-5432}
+    restart: unless-stopped
+
+    depends_on:
+      api_db:
+        condition: service_healthy
+  worker:
+    build:
+      context: .
+      dockerfile: worker.Dockerfile
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD:-soup}
+      - DB_USER=${DB_USER:-soup}
+      - DB_NAME=${DB_NAME:-soup}
+      - DB_HOST=${DB_HOST:-api_db}
+      - DB_PORT=${DB_PORT:-5432}
+    depends_on:
+      api_db:
+        condition: service_healthy
+    deploy:
+      replicas: 4
+    restart: unless-stopped
+
+
+
+  api_db:
+    image: postgres:19rc1-alpine3.23
+    
+    container_name: db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-soup}
+      - POSTGRES_USER=${DB_USER:-soup}
+      - POSTGRES_DB=${DB_NAME:-soup}
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/001-schemas.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+
